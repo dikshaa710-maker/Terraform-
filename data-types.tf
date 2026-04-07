@@ -9,17 +9,17 @@
 #     type =list(number)
 # }
 
-variable "instance_tags"{
-    type= map
-    default = {
-        Name = "app-server"
-        environment = "dev"
-        team = "payments" 
-    }
+variable "instance_tags" {
+  type = map(any)
+  default = {
+    Name        = "app-server"
+    environment = "dev"
+    team        = "payments"
+  }
 
 }
 
 output "variable_value" {
-    value= var.instance_tags
+  value = var.instance_tags
 }
 

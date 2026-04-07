@@ -1,7 +1,7 @@
 
 resource "aws_eip" "sp" {
-  
-  domain   = "vpc"
+
+  domain = "vpc"
 }
 resource "aws_security_group" "allow_tls" {
   name        = "Attribute-sg"
